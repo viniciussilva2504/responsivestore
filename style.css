@@ -1,0 +1,203 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 60px;
+}
+
+header {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-family: 'Sixtyfour Convergence';
+}
+
+header, footer {
+    background-color: blue;
+    color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.banner-keyboards {
+    padding: 10px;
+    padding-top: 10px;
+} 
+
+.banner-keyboards img {
+    width: 100%; 
+    height: auto;
+    margin-top: 65px;
+}
+
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.lista-keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.lista-keyboard li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    flex: 1 1 calc(25% - 20px); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.texto-sobre h2 {
+    border-bottom: 3px solid blue; 
+    padding-bottom: 10px; 
+}
+
+section > .container h2 {
+    border-bottom: 3px solid blue; 
+    padding-bottom: 10px; 
+}
+
+
+.lista-keyboard li:hover {
+    transform: scale(1.05);
+}
+
+.lista-keyboard img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#sobre-a-loja {
+    display: flex;
+    flex-direction: row; 
+    padding-top: 20px;
+}
+
+#sobre-a-loja img {
+    max-width: 40%;
+    margin-right: 20px; 
+}
+
+.texto-sobre {
+    flex: 1; 
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+#menu {
+    display: flex; 
+}
+
+#menu ul {
+    display: flex; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    margin-left: 20px; 
+}
+
+#menu a {
+    color: #f9f9f9;
+    text-decoration: none; 
+}
+
+.texto-sobre h2 {
+    border-bottom: 2px solid #ddd; 
+    padding-bottom: 10px; 
+}
+
+section > .container h2 {
+    border-bottom: 2px solid #ddd; 
+    padding-bottom: 10px; 
+}
+
+#menu a:hover {
+    text-decoration: underline; 
+    color: red ;
+}
+
+
+@media (min-width:1024px) {
+    .container-flex {
+        display: flex;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 641px) {
+    .lista-calcados li {
+        flex: 1 1 calc(50% - 20px); 
+    }
+
+    #sobre-a-loja {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #sobre-a-loja img {
+        max-width: 100%; 
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+}
+
+@media (max-width: 640px) {
+    .lista-calcados li {
+        flex: 1 1 100%; 
+    }
+
+    #sobre-a-loja {
+        flex-direction: column; 
+    }
+
+    #sobre-a-loja img {
+        max-width: 100%; 
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    margin-left: 10px;
+}
