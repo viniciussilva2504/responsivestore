@@ -143,21 +143,37 @@ section > .container h2 {
         flex: 1 1 calc(30% - 20px); 
     }
 
-    @media (max-width: 640px) {
-        .lista-keyboard li {
-            flex: 1 1 100%; 
-        }
-    
-        #sobre-a-loja {
-            flex-direction: column; 
-        }
-    
-        #sobre-a-loja img {
-            max-width: 100%; 
-            margin-right: 0; 
-            margin-bottom: 20px; 
-        }
+    #sobre-a-loja {
+        flex-direction: column; 
+        align-items: center; 
     }
+
+    #sobre-a-loja img {
+        max-width: 100%; 
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+}
+
+@media (max-width: 640px) {
+    .lista-keyboard li {
+        flex: 1 1 100%; 
+    }
+
+    #sobre-a-loja {
+        flex-direction: column; 
+    }
+
+    #sobre-a-loja img {
+        max-width: 100%; 
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+
+    .banner-keyboards img {
+        padding-top: 145px;
+    }
+}
 
 .footer-content {
     display: flex;
@@ -173,5 +189,4 @@ section > .container h2 {
 
 .social-icons li {
     margin-left: 10px;
-}
 }
