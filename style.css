@@ -5,10 +5,6 @@ body {
     box-sizing: border-box;
 }
 
-body {
-    padding-top: 60px;
-}
-
 header {
     position: fixed; 
     top: 0; 
@@ -34,15 +30,12 @@ header, footer {
 
 .banner-keyboards {
     padding: 10px;
-    padding-top: 10px;
 } 
 
 .banner-keyboards img {
     width: 100%; 
     height: auto;
-    margin-top: 65px;
 }
-
 
 h2 {
     text-align: center;
@@ -79,7 +72,6 @@ section > .container h2 {
     padding-bottom: 10px; 
 }
 
-
 .lista-keyboard li:hover {
     transform: scale(1.05);
 }
@@ -88,7 +80,6 @@ section > .container h2 {
     max-width: 100%;
     height: auto;
 }
-
 
 #sobre-a-loja {
     display: flex;
@@ -131,21 +122,15 @@ section > .container h2 {
     text-decoration: none; 
 }
 
-.texto-sobre h2 {
-    border-bottom: 2px solid #ddd; 
-    padding-bottom: 10px; 
-}
-
-section > .container h2 {
+.texto-sobre h2, section > .container h2 {
     border-bottom: 2px solid #ddd; 
     padding-bottom: 10px; 
 }
 
 #menu a:hover {
     text-decoration: underline; 
-    color: red ;
+    color: red;
 }
-
 
 @media (min-width:1024px) {
     .container-flex {
@@ -154,37 +139,25 @@ section > .container h2 {
 }
 
 @media (max-width: 1023px) and (min-width: 641px) {
-    .lista-calcados li {
-        flex: 1 1 calc(50% - 20px); 
+    .lista-keyboard li {
+        flex: 1 1 calc(30% - 20px); 
     }
 
-    #sobre-a-loja {
-        flex-direction: column; 
-        align-items: center; 
+    @media (max-width: 640px) {
+        .lista-keyboard li {
+            flex: 1 1 100%; 
+        }
+    
+        #sobre-a-loja {
+            flex-direction: column; 
+        }
+    
+        #sobre-a-loja img {
+            max-width: 100%; 
+            margin-right: 0; 
+            margin-bottom: 20px; 
+        }
     }
-
-    #sobre-a-loja img {
-        max-width: 100%; 
-        margin-right: 0; 
-        margin-bottom: 20px; 
-    }
-}
-
-@media (max-width: 640px) {
-    .lista-calcados li {
-        flex: 1 1 100%; 
-    }
-
-    #sobre-a-loja {
-        flex-direction: column; 
-    }
-
-    #sobre-a-loja img {
-        max-width: 100%; 
-        margin-right: 0; 
-        margin-bottom: 20px; 
-    }
-}
 
 .footer-content {
     display: flex;
@@ -200,4 +173,5 @@ section > .container h2 {
 
 .social-icons li {
     margin-left: 10px;
+}
 }
