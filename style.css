@@ -113,3 +113,33 @@ footer {
     width: 200px;
     height: 180px;
 }
+
+
+.texto-sobre {
+    text-align: center; 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.post {
+    flex: 1 1 100%; 
+    max-width: 100%;
+}
+
+@media (min-width: 576px) {
+    .post {
+        flex: 1 1 48%;
+        max-width: 48%;
+    }
+}
+
+@media (min-width: 768px) {
+    .post {
+        flex: 1 1 30%; 
+        max-width: 30%;
+    }
+}
+
