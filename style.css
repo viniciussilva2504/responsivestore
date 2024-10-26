@@ -11,10 +11,12 @@ header {
     left: 0;
     right: 0;
     z-index: 1000;
+    background-color: blue;
 }
 
 header h1 {
     font-family: 'Sixtyfour Convergence';
+    color: #fff;
 }
 
 header, footer {
@@ -26,84 +28,11 @@ header, footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-}
-
-.banner-keyboards {
-    padding: 10px;
-} 
-
-.banner-keyboards img {
-    width: 100%; 
-    height: auto;
-}
-
-h2 {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.lista-keyboard {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
-}
-
-.lista-keyboard li {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 15px;
-    text-align: center;
-    flex: 1 1 calc(25% - 20px); 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-}
-
-.texto-sobre h2 {
-    border-bottom: 3px solid blue; 
-    padding-bottom: 10px; 
-}
-
-section > .container h2 {
-    border-bottom: 3px solid blue; 
-    padding-bottom: 10px; 
-}
-
-.lista-keyboard li:hover {
-    transform: scale(1.05);
-}
-
-.lista-keyboard img {
-    max-width: 100%;
-    height: auto;
-}
-
-#sobre-a-loja {
-    display: flex;
-    flex-direction: row; 
-    padding-top: 20px;
-}
-
-#sobre-a-loja img {
-    max-width: 40%;
-    margin-right: 20px; 
-}
-
-.texto-sobre {
-    flex: 1; 
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
 }
 
 #menu {
-    display: flex; 
+    display: flex;
 }
 
 #menu ul {
@@ -118,13 +47,8 @@ section > .container h2 {
 }
 
 #menu a {
-    color: #f9f9f9;
+    color: #fff;
     text-decoration: none; 
-}
-
-.texto-sobre h2, section > .container h2 {
-    border-bottom: 2px solid #ddd; 
-    padding-bottom: 10px; 
 }
 
 #menu a:hover {
@@ -132,61 +56,60 @@ section > .container h2 {
     color: red;
 }
 
-@media (min-width:1024px) {
-    .container-flex {
-        display: flex;
-    }
+.banner-keyboards {
+    padding: 10px;
+} 
+
+.banner-keyboards img {
+    width: 100%; 
+    height: auto;
 }
 
-@media (max-width: 1023px) and (min-width: 641px) {
-    .lista-keyboard li {
-        flex: 1 1 calc(30% - 20px); 
-    }
-
-    #sobre-a-loja {
-        flex-direction: column; 
-        align-items: center; 
-    }
-
-    #sobre-a-loja img {
-        max-width: 100%; 
-        margin-right: 0; 
-        margin-bottom: 20px; 
-    }
+.img-loja {
+    max-width: 300px;
+    height: auto;     
+    margin-right: 20px;
 }
 
-@media (max-width: 640px) {
-    .lista-keyboard li {
-        flex: 1 1 100%; 
-    }
-
-    #sobre-a-loja {
-        flex-direction: column; 
-    }
-
-    #sobre-a-loja img {
-        max-width: 100%; 
-        margin-right: 0; 
-        margin-bottom: 20px; 
-    }
-
-    .banner-keyboards img {
-        padding-top: 145px;
-    }
+.texto-sobre {
+    flex: 1; 
 }
 
-.footer-content {
+#sobre-a-loja {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.btn-leia-mais {
+    margin-bottom: 10px;
+}
+
+.row,
+.row h2 {
+    margin-left: 30px;
+}
+
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px; 
 }
 
 .social-icons {
-    display: flex;
+    display: flex; 
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .social-icons li {
-    margin-left: 10px;
+    margin-left: 15px;
+}
+
+.col-md-8 img {
+    display: flex;
+    width: 200px;
+    height: 180px;
 }
